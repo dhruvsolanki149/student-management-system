@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Courses • College MIS</title><link rel="stylesheet" href="css/styles.css"/></head><body>
+<header class="topbar"><div class="brand"><div class="logo"></div><span>Courses</span></div><div class="nav"><a href="index.html">Home</a><button class="btn ghost small" onclick="toggleTheme()">Theme</button></div></header>
+<main class="container">
+  <section class="card"><h3 style="margin:0 0 8px">Add / Edit Course</h3>
+    <div class="row">
+      <input id="code" placeholder="Code * e.g., CS101"/>
+      <input id="title" placeholder="Title *"/>
+      <input id="credits" type="number" min="1" max="10" value="3"/>
+      <input id="departmentId" placeholder="Department ID (optional)"/>
+    </div>
+    <div class="toolbar" style="margin-top:10px">
+      <button class="btn" id="btnCreate">Create</button>
+      <button class="btn secondary" id="btnUpdate" disabled>Update</button>
+      <button class="btn danger" id="btnDelete" disabled>Delete</button>
+      <button class="btn ghost" id="btnClear">Clear</button>
+    </div>
+  </section>
+  <section class="card" style="margin-top:14px"><h3 style="margin:0 0 8px">Courses</h3>
+    <table class="table" id="tbl"><thead><tr><th>ID</th><th>Code</th><th>Title</th><th>Credits</th><th>Dept</th></tr></thead><tbody></tbody></table>
+  </section>
+</main><script src="js/common.js"></script><script src="js/courses.js"></script></body></html>

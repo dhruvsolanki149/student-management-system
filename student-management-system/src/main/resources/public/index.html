@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Student Management System</title>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo"></div><span>Student Management System</span></div>
+  <div class="nav">
+    <a href="students.html">Students</a>
+    <a href="courses.html">Courses</a>
+    <a href="offerings.html">Offerings</a>
+    <a href="enrollments.html">Enrollments</a>
+    <a href="attendance.html">Attendance</a>
+    <button class="btn ghost small" onclick="toggleTheme()">Theme</button>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero card" style="flex-direction:column;align-items:flex-start">
+    <div style="width:100%">
+      <div class="kicker"></div>
+      <h1 class="h1">Manage Students, Courses & Attendance Easily.</h1>
+      <p class="sub"></p>
+      <div class="stack" aria-hidden="true">
+        <a class="btn" href="students.html">Students</a>
+        <a class="btn secondary" href="courses.html">Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid" style="margin-top:18px">
+    <a class="card" href="students.html"><h1 class="title">Students</h1></a>
+    <a class="card" href="courses.html"><h1 class="title">Courses</h1></a>
+    <a class="card" href="offerings.html"><h1 class="title">Offerings</h1></a>
+    <a class="card" href="enrollments.html"><h1 class="title">Enrollments</h1></a>
+    <a class="card" href="attendance.html"><h1 class="title">Attendance</h1></a>
+  </section>
+
+  <footer style="margin-top:30px;color:var(--muted);text-align:center">© Student Management System 2025. All rights reserved.</footer>
+</main>
+
+<script src="js/common.js"></script>
+</body>
+</html>

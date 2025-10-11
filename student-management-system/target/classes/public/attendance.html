@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Attendance • College MIS</title><link rel="stylesheet" href="css/styles.css"/></head><body>
+<header class="topbar"><div class="brand"><div class="logo"></div><span>Attendance</span></div><div class="nav"><a href="index.html">Home</a><button class="btn ghost small" onclick="toggleTheme()">Theme</button></div></header>
+<main class="container">
+  <section class="card"><h3 style="margin:0 0 8px">Create Session</h3>
+    <div class="row">
+      <input id="offeringId" type="number" placeholder="Offering ID *"/>
+      <input id="date" type="date"/>
+      <input id="periodNo" type="number" min="1" placeholder="Period No *"/>
+    </div>
+    <div class="toolbar" style="margin-top:10px"><button class="btn" id="btnCreateSession">Create session</button><span id="sessionInfo" class="badge">No session yet</span></div>
+  </section>
+  <section class="card" style="margin-top:14px"><h3 style="margin:0 0 8px">Mark Attendance</h3>
+    <div class="toolbar"><input id="sessionId" type="number" placeholder="Session ID *"/><button class="btn secondary" id="btnLoad">Load Enrollments</button><button class="btn ghost" id="btnAllP">All P</button><button class="btn" id="btnSubmit">Submit</button></div>
+    <table class="table" id="tbl"><thead><tr><th>Student ID</th><th>Status</th><th>Remarks</th></tr></thead><tbody></tbody></table>
+  </section>
+  <section class="card" style="margin-top:14px"><h3 style="margin:0 0 8px">My Summary</h3>
+    <div class="toolbar"><input id="sumStudentId" type="number" placeholder="Student ID"/><button class="btn secondary" id="btnSummary">Get Summary</button><span id="sumOut" class="badge">—</span></div>
+  </section>
+</main><script src="js/common.js"></script><script src="js/attendance.js"></script></body></html>

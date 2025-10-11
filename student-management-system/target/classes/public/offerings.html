@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Offerings • College MIS</title><link rel="stylesheet" href="css/styles.css"/></head><body>
+<header class="topbar"><div class="brand"><div class="logo"></div><span>Offerings</span></div><div class="nav"><a href="index.html">Home</a><button class="btn ghost small" onclick="toggleTheme()">Theme</button></div></header>
+<main class="container">
+  <section class="card"><h3 style="margin:0 0 8px">Add / Edit Offering</h3>
+    <div class="row">
+      <input id="courseId" type="number" placeholder="Course ID *"/>
+      <input id="semester" type="number" min="1" max="8" placeholder="Semester *"/>
+      <input id="academicYear" placeholder="Academic Year * e.g., 2025-2026"/>
+      <input id="sectionId" type="number" placeholder="Section ID (optional)"/>
+    </div>
+    <div class="toolbar" style="margin-top:10px">
+      <button class="btn" id="btnCreate">Create</button>
+      <button class="btn secondary" id="btnUpdate" disabled>Update</button>
+      <button class="btn danger" id="btnDelete" disabled>Delete</button>
+      <button class="btn ghost" id="btnClear">Clear</button>
+    </div>
+  </section>
+  <section class="card" style="margin-top:14px"><h3 style="margin:0 0 8px">Offerings</h3>
+    <table class="table" id="tbl"><thead><tr><th>ID</th><th>CourseId</th><th>Semester</th><th>Year</th><th>Section</th></tr></thead><tbody></tbody></table>
+  </section>
+</main><script src="js/common.js"></script><script src="js/offerings.js"></script></body></html>
